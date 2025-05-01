@@ -40,6 +40,11 @@ class Dog(Animal):
     Returns:
     - str: The sound made by the dog ("Woof!").
     """
+    def __init__(self, name):
+        self.name = name
+    def make_sound(self):
+        return "Woof!"    
+
 
 class Cat(Animal):
     """
@@ -55,6 +60,10 @@ class Cat(Animal):
     Returns:
     - str: The sound made by the cat ("Meow!").
     """
+    def __init__(self, name):
+        self.name = name
+    def make_sound(self):
+        return "Meow!"
 
 class Duck(Animal):
     """
@@ -70,3 +79,7 @@ class Duck(Animal):
     Returns:
     - str: The sound made by the duck ("Quack!").
     """
+    def __init__(self, name):
+        self.name = name
+    def make_sound(self):
+        return "Quack!"
